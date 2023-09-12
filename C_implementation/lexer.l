@@ -23,9 +23,6 @@ BRPOS           { return BRPOS; }
 BRZERO          { return BRZERO; }
 BRNEG           { return BRNEG; }
 SYSCALL         { return SYSCALL; }
-"ACCUMULATOR"   { return ACCUMULATOR; }
-"PC"            { return PC; }
-"LABEL"         { return LABEL; }
 [0-9]+          { yylval_num = atoi(yytext); return NUMBER; }
 #               { return HASH; }
 [a-zA-Z_][a-zA-Z0-9_]*  { yylval_label = strdup(yytext); return IDENTIFIER; }

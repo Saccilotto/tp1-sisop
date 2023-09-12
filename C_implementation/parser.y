@@ -44,8 +44,6 @@ operand_list:
 
 operand:
     IDENTIFIER
-    | ACCUMULATOR
-    | PC
     | NUMBER
     ;
 
